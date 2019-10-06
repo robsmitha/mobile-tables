@@ -4,13 +4,13 @@ $.fn.MobileTables = function(options) {
 
     // Default options
     var settings = $.extend({
-        width: 769
+        breakpointWidth: 769
     }, options );
  
 
     this.each(function() {
         if(!$(this).hasClass('.mobile-table')){
-            if ($(window).width() < settings.width) {
+            if ($(window).width() < settings.breakpointWidth) {
                 var html = ''
                 $(this).find('tbody tr').each(function () {
                     html += '<div style="padding: 1rem; background-color: #fff; border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.25rem;">'
