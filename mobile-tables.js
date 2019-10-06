@@ -9,7 +9,7 @@ $.fn.MobileTables = function(options) {
  
 
     this.each(function() {
-        if(!$(this).hasClass('.mobile-table')){
+        if(!$(this).hasClass('mobile-table')){
             if ($(window).width() < settings.breakpointWidth) {
                 var html = ''
                 $(this).find('tbody tr').each(function () {
